@@ -1,48 +1,48 @@
 package edu.javacorse.studentorder.domain;
 
 public class StudentOrder {
-    private String имяМужа;
-    private String фамилияМужа;
-    private String имяЖены;
-    private String фамилияЖены;
+    private String hFirstName;
+    private String hLastName;
+    private String wFirstName;
+    private String wLastName;
 
-    public StudentOrder(String имяМужа, String фамилияМужа, String имяЖены, String фамилияЖены) {
-        this.имяМужа = имяМужа;
-        this.фамилияМужа = фамилияМужа;
-        this.имяЖены = имяЖены;
-        this.фамилияЖены = фамилияЖены;
+    public StudentOrder(String hFirstName, String hLastName, String wFirstName, String wLastName) {
+        this.hFirstName = hFirstName;
+        this.hLastName = hLastName;
+        this.wFirstName = wFirstName;
+        this.wLastName = wLastName;
     }
 
     public String gethFirstName() {
-        return имяМужа;
+        return hFirstName;
     }
 
     public void sethFirstName(String hFirstName) {
-        this.фамилияМужа = hFirstName;
+        this.hFirstName = hFirstName;
     }
 
     public String gethLastName() {
-        return фамилияМужа;
+        return hLastName;
     }
 
-    public void имяЖены(String hLastName) {
-        this.имяЖены = hLastName;
+    public void sethLastName(String hLastName) {
+        this.hLastName = hLastName;
     }
 
     public String getwFirstName() {
-        return имяЖены;
+        return wFirstName;
     }
 
     public void setwFirstName(String wFirstName) {
-        this.фамилияЖены = wFirstName;
+        this.wFirstName = wFirstName;
     }
 
     public String getwLastName() {
-        return фамилияЖены;
+        return wLastName;
     }
 
     public void setwLastName(String wLastName) {
-        this.фамилияЖены = wLastName;
+        this.wLastName = wLastName;
     }
 
 }
