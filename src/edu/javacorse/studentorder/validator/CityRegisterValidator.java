@@ -8,6 +8,9 @@ public class CityRegisterValidator {
     private static String staticHostName;
     private StudentOrder studentOrder;
 
+    public CityRegisterValidator() {
+    }
+
     public CityRegisterValidator(StudentOrder studentOrder) {
         this.studentOrder = studentOrder;
     }
@@ -45,7 +48,7 @@ public class CityRegisterValidator {
         this.studentOrder = studentOrder;
     }
 
-    public static boolean checkCityRegister(StudentOrder studentOrder) {
+    public boolean checkCityRegister(StudentOrder studentOrder) {
         if (AnswerCityRegister.isSuccess(studentOrder)) {
             System.out.println("Имя хоста региона " + staticHostName);
         }

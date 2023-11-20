@@ -1,48 +1,46 @@
 package edu.javacorse.studentorder.domain;
 
 public class StudentOrder {
-    private String hFirstName;
-    private String hLastName;
-    private String wFirstName;
-    private String wLastName;
+    private long studentOrderID;
+    private Adult husband;
+    private Adult wife;
+    private Child child;
 
-    public StudentOrder(String hFirstName, String hLastName, String wFirstName, String wLastName) {
-        this.hFirstName = hFirstName;
-        this.hLastName = hLastName;
-        this.wFirstName = wFirstName;
-        this.wLastName = wLastName;
+    public StudentOrder(Adult husband, Adult wife, Child child) {
+        this.husband = husband;
+        this.wife = wife;
+        this.child = child;
     }
 
-    public String gethFirstName() {
-        return hFirstName;
+    public long getStudentOrderID() {
+        return studentOrderID;
     }
 
-    public void sethFirstName(String hFirstName) {
-        this.hFirstName = hFirstName;
+    public void setStudentOrderID(long studentOrderID) {
+        this.studentOrderID = studentOrderID;
     }
 
-    public String gethLastName() {
-        return hLastName;
+    public Adult getHusband() {
+        return husband;
     }
 
-    public void sethLastName(String hLastName) {
-        this.hLastName = hLastName;
+    public void setHusband(Adult husband) {
+        this.husband = husband;
     }
 
-    public String getwFirstName() {
-        return wFirstName;
+    public Adult getWife() {
+        return wife;
     }
 
-    public void setwFirstName(String wFirstName) {
-        this.wFirstName = wFirstName;
+    public void setWife(Adult wife) {
+        this.wife = wife;
     }
 
-    public String getwLastName() {
-        return wLastName;
+    public Child getChild() {
+        return child;
     }
 
-    public void setwLastName(String wLastName) {
-        this.wLastName = wLastName;
+    public void setChild(Child child) {
+        this.child = child;
     }
-
 }

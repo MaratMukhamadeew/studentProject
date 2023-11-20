@@ -4,7 +4,7 @@ import edu.javacorse.studentorder.domain.AnswerChildren;
 import edu.javacorse.studentorder.domain.StudentOrder;
 
 public class ChildrenValidator {
-    public static AnswerChildren checkChildren(StudentOrder so) {
+    public AnswerChildren checkChildren(StudentOrder so) {
         System.out.println("Children check запущен");
         return new AnswerChildren();
     }
